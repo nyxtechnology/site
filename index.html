@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Black November - Nyx Technology</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <style type="text/css">
+    .header {
+      position: relative;
+      width: 100%;
+      margin-top: 20px;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      text-align: right;        
+    }
+    .main { position: relative; }
+    .main .nyx-button {
+      width: auto;
+    }
+    [class^="home-shape"] {
+      position: absolute;
+      opacity: .5;
+      z-index: 1;
+    }
+    .home-shape-1 {
+      top: -80px;
+      left: 10%;
+      stroke: var(--red);
+    }
+    .home-shape-2 {
+      top: -90px;
+      left: 50%;
+    }
+    .home-shape-3 {
+      left: 55%;
+      top: 0;
+    }
+    .home-shape-4 {
+      right: 0;
+      top: 30%;
+    }
+    .home-shape-5 {
+      right: 20%;
+      top: 60%;
+      stroke: var(--blue);
+    }
+    .home-shape-6 {
+      left: 45%;
+      top: 80%;
+    }
+    .neon-title {
+      position: relative;
+      font-size: 9.5rem;
+      line-height: 8.5rem;
+      z-index: 2;
+    }
+    .neon-title > svg {
+      margin-left: -30px;
+    }
+    .neon-title__text {
+      color: transparent;
+      stroke-width: 4px;
+    }
+    .neon-title__text:nth-of-type(1) { 
+      stroke: var(--yellow);
+      text-shadow: 0 0 20px var(--yellow), 0 0 40px var(--yellow);
+    }
+    .neon-title__text:nth-of-type(2) { 
+      stroke: var(--red);
+      text-shadow: 0 0 20px var(--red), 0 0 40px var(--red);
+    } 
+    .neon-title__text:nth-of-type(3) { 
+      stroke: var(--blue);
+      text-shadow: 0 0 20px var(--blue), 0 0 40px var(--blue);
+    }       
+    .neon-title__pattern {
+      height: 80px;
+      margin-top: 8px;
+    }
+    .subtitle {
+      font-weight: inherit;
+      margin-bottom: 32px;
+    }
+    .footer {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .footer-text {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+    .footer-partners {
+      width: 100%;
+      margin-left: -20px;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .footer-partners__item {
+      width: 130px;
+      padding: 20px;
+      position: relative;
+    }
+    .footer-partners__item > img {
+      width: 100%;
+      display: inline-block;
+      filter: grayscale();
+      transition: .5s filter;
+    }
+    .footer-partners__item:hover > img { filter: none; }    
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <svg
+      class="home-shape-1 shape-wavy"
+      xmlns="http://www.w3.org/2000/svg" 
+      width="77.716" 
+      height="98.621"
+      viewBox="0 0 77.716 98.621">
+        <path d="M1123.287,540c0,16.429-31.547,18.361,0,38.139s0,27.322,0,43.534" transform="matrix(0.875, -0.485, 0.485, 0.875, -1225.186, 85.88)" />
+    </svg>
+    <div class="home-shape-2 shape-circle shape-circle--blue"></div>
+    <a href="/" title="Home" class="logo">
+      <img src="./assets/images/logo_nyx_technology.png"
+        alt="logo branca com as letras N Y X e o complemento com o texto technology">
+    </a>
+  </header>
+  <main class="main">
+    <h1 class="neon-title">
+      <svg viewBox="0 0 640 310">
+        <text class="neon-title__text" x="30" y="100">BLACK</text>
+        <text class="neon-title__text" x="30" y="190">NOVEMBER</text>
+        <text class="neon-title__text" x="30" y="280">NYX</text>
+        <foreignobject x="280" y="205" width="53%" height="80px">
+          <div class="neon-title__pattern circles-pattern"></div>
+        </foreignobject>
+      </svg>
+    </h1>
+    <h2 class="subtitle">
+      50% de desconto nas horas <br> da equipe de seniors.
+    </h2>
+    <a href="contato.html" title="Eu quero o desconto">
+      <button class="nyx-button">EU QUERO</button>
+    </a>
+
+    <div class="home-shape-3 shape-square">
+      <span class="shape-square-1"></span>
+      <span class="shape-square-2"></span>
+      <span class="shape-square-3"></span>
+    </div>
+    <div class="home-shape-4 shape-circle shape-circle--yellow"></div>
+    <svg
+      class="home-shape-5 shape-wavy"
+      xmlns="http://www.w3.org/2000/svg" 
+      width="77.716" 
+      height="98.621"
+      viewBox="0 0 77.716 98.621">
+        <path d="M1123.287,540c0,16.429-31.547,18.361,0,38.139s0,27.322,0,43.534" transform="matrix(0.875, -0.485, 0.485, 0.875, -1225.186, 85.88)" />
+    </svg>
+    <svg
+      class="home-shape-6 shape-triangle shape-triangle--red"
+      xmlns="http://www.w3.org/2000/svg"
+      width="91.31"
+      height="74.533"
+      viewBox="0 0 91.31 74.533">
+      <g transform="translate(-959.254 -643.472)">
+        <path
+          d="M589,501.25l24.7,31.888,46.869-73.233Z"
+          transform="translate(371 184)"/>
+        <path
+          d="M589,501.25l24.7,31.888,46.869-73.233Z"
+          transform="translate(390 184)"/>
+      </g>
+    </svg>
+  </main>
+  <footer class="footer">
+    <div class="footer-text">
+      Quem já foi nosso cliente:
+    </div>
+    <ul class="footer-partners">
+      <li class="footer-partners__item">
+        <img src="assets/images/logo_fiesc.png" alt="Logo Fiesc">
+      </li>
+      <li class="footer-partners__item">
+        <img src="assets/images/logo_senai.png" alt="Logo Senai">
+      </li>
+      <li class="footer-partners__item">
+        <img src="assets/images/logo_sesi.png" alt="Logo Sesi">
+      </li>
+      <li class="footer-partners__item">
+        <img src="assets/images/logo_panasonic.png" alt="Logo Panasonic">
+      </li>
+      <li class="footer-partners__item">
+        <img src="assets/images/logo_kickante.png" alt="Logo Kickante">
+      </li>
+      <li class="footer-partners__item">
+        <img src="assets/images/logo_dfs.png" alt="Logo DFS">
+      </li>
+      <li class="footer-partners__item">
+        <img src="assets/images/logo_quero_educacao.png" alt="Logo Quero educação">
+      </li>
+      <li class="footer-partners__item">
+        <img src="assets/images/logo_peer2beer.png" alt="Logo Peer two beer">
+      </li>
+      <li class="footer-partners__item">
+        <img src="assets/images/logo_stefanini.png" alt="Logo Stefanini">
+      </li>
+    </ul>
+  </footer>
+  <link rel="stylesheet" href="assets/styles/app.css">
+  <style type="text/css" scoped>
+    @media screen and (max-width: 600px) {
+      .header {
+          justify-content: center;         
+      }
+      [class^="home-shape"] {
+        transform: scale(.6,.6);
+      }
+      .neon-title > svg {
+        margin-left: -15px;
+      }
+      .footer { text-align: center; }
+      .footer-partners {
+        margin-left: 0;
+      }
+      .footer-partners__item {
+        width: 33.3%;
+      }
+    }
+    @media screen and (min-width: 900px) {
+      body {
+        padding: 0 15%;
+        font-size: 1.8rem;
+      }
+      [class^="home-shape"] { opacity: .8; }
+      .neon-title { max-width: 70%; }
+    }
+    @media screen and (min-width: 1200px) {
+      body { font-size: 2rem; }
+      .neon-title { max-width: 55%; }
+    }
+    @media screen and (min-width: 1900px) {
+      .neon-title { max-width: 38%; }
+    }
+  </style>
+</body>
+</html>
