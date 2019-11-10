@@ -79,7 +79,6 @@
       top: 70%;
     }
   </style>
-  <link rel="stylesheet" href="assets/styles/components.css">
 </head>
 
 <body>
@@ -119,14 +118,17 @@
         <textarea id="description" name="description" class="nyx-field__textarea" rows="7" required></textarea>
       </label>
       <label class="nyx-field" for="attachment">
-        <span class="nyx-field__text nyx-field__text--half">Anexos - Arquivos para avaliação:</span>
+        <div class="nyx-field__text attachment-text nyx-field__text--half">
+          <span class="amount"></span>
+          <span class="text">Arquivo para avaliação:</span>
+        </div>
         <div class="nyx-field-file">
           <input id="attachment" class="nyx-field-file__input" type="file" name="file">
           <button type="button" class="contact-form__attachment nyx-button nyx-button--outline">
             <svg class="nyx-button--left-icon" xmlns="http://www.w3.org/2000/svg" width="10.085" height="24.325" viewBox="0 0 10.085 24.325">
               <path d="M142.3,24.325a4.056,4.056,0,0,0,3.782-4.276V5.7c0-3.144-2.262-5.7-5.042-5.7S136,2.558,136,5.7V20.049h1.261V5.7a3.81,3.81,0,1,1,7.564,0V20.049a2.54,2.54,0,1,1-5.042,0V8.552a1.27,1.27,0,1,1,2.521,0v11.5h1.261V8.552a2.54,2.54,0,1,0-5.042,0v11.5A4.056,4.056,0,0,0,142.3,24.325Z" transform="translate(146.085 24.325) rotate(180)" fill="#aea633"/>
             </svg>
-            <span class="nyx-button--text">SELECIONAR ARQUIVOS</span>
+            <span class="nyx-button--text">SELECIONAR ARQUIVO</span>
           </button>
         </div>
       </label>
