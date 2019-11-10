@@ -67,15 +67,15 @@
     }
     .neon-title__text:nth-of-type(1) { 
       stroke: var(--yellow);
-      text-shadow: 0 0 20px var(--yellow), 0 0 40px var(--yellow);
+      text-shadow: 0 0 20px var(--yellow), 0 0 30px var(--yellow);
     }
     .neon-title__text:nth-of-type(2) { 
       stroke: var(--red);
-      text-shadow: 0 0 20px var(--red), 0 0 40px var(--red);
+      text-shadow: 0 0 20px var(--red), 0 0 30px var(--red);
     } 
     .neon-title__text:nth-of-type(3) { 
       stroke: var(--blue);
-      text-shadow: 0 0 20px var(--blue), 0 0 40px var(--blue);
+      text-shadow: 0 0 20px var(--blue), 0 0 30px var(--blue);
     }       
     .neon-title__pattern {
       height: 80px;
@@ -134,11 +134,11 @@
   </header>
   <main class="main">
     <h1 class="neon-title">
-      <svg viewBox="0 0 640 310">
-        <text class="neon-title__text" x="30" y="100">BLACK</text>
-        <text class="neon-title__text" x="30" y="190">NOVEMBER</text>
-        <text class="neon-title__text" x="30" y="280">NYX</text>
-        <foreignobject x="280" y="205" width="53%" height="80px">
+      <svg viewBox="0 0 640 330">
+        <text class="neon-title__text" x="30" y="110">BLACK</text>
+        <text class="neon-title__text" x="30" y="200">NOVEMBER</text>
+        <text class="neon-title__text" x="30" y="290">NYX</text>
+        <foreignobject x="280" y="215" width="53%" height="80px">
           <div class="neon-title__pattern circles-pattern"></div>
         </foreignobject>
       </svg>
@@ -215,10 +215,10 @@
     </ul>
   </footer>
   <link rel="stylesheet" href="assets/styles/app.css">
-  <style type="text/css" scoped>
+  <style type="text/css">
     @media screen and (max-width: 600px) {
       .header {
-          justify-content: center;         
+        justify-content: center;         
       }
       [class^="home-shape"] {
         transform: scale(.6,.6);
@@ -244,10 +244,10 @@
     }
     @media screen and (min-width: 1200px) {
       body { font-size: 2rem; }
-      .neon-title { max-width: 55%; }
+      .neon-title { max-width: 50%; }
     }
     @media screen and (min-width: 1900px) {
-      .neon-title { max-width: 38%; }
+      .neon-title { max-width: 40%; }
     }
   </style>
 </body>
