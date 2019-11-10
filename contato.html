@@ -20,11 +20,11 @@
       position: relative;
       width: 90%;
       margin: 0 auto;
+      margin-top: 10%;
     }
     .main-title {
       font-size: 2.0rem;
       font-weight: normal;
-      margin-top: 100px;
       margin-bottom: 70px;
       text-align: center;
     }
@@ -205,23 +205,24 @@
   <link rel="stylesheet" href="assets/styles/app.css">
   <style type="text/css" scoped>
     @media screen and (max-width: 600px) {
-        [class^="contact-shape"] { transform: scale(.6,.6); }
-        .contact-form .nyx-field-file { width: 100%; }
+      .main { width: 100%; }
+      [class^="contact-shape"] { transform: scale(.6,.6); }
+      .contact-form .nyx-field-file { width: 100%; }
+    }
+    @media screen and (min-width: 900px) {
+      body {
+        padding: 0 15%;
+        font-size: 1.8rem;
       }
-      @media screen and (min-width: 900px) {
-        body {
-          padding: 0 15%;
-          font-size: 1.8rem;
-        }
-        [class^="contact-shape"] { display: block; }
-        .main { width: 70%; }
-      }
-      @media screen and (min-width: 1200px) {
-        body { font-size: 2rem; }
-      }
-      @media screen and (min-width: 1500px) {
-        .main { width: 50%; }
-      }
+      [class^="contact-shape"] { display: block; }
+      .main { width: 70%; }
+    }
+    @media screen and (min-width: 1200px) {
+      body { font-size: 2rem; }
+    }
+    @media screen and (min-width: 1500px) {
+      .main { width: 45%; }
+    }
     </style>
   <script src="assets/js/app.js"></script>
 </body>
