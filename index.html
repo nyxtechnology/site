@@ -32,9 +32,26 @@
   <main class="main">
     <h1 class="neon-title">
       <svg viewBox="0 0 640 330">
-        <text class="neon-title__text" x="30" y="110">BLACK</text>
-        <text class="neon-title__text" x="30" y="200">NOVEMBER</text>
-        <text class="neon-title__text" x="30" y="290">NYX</text>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="10 10" result="glow"/>
+            <feMerge>
+              <feMergeNode in="glow"/>
+              <feMergeNode in="glow"/>
+              <feMergeNode in="glow"/>
+            </feMerge>
+        </filter>
+        <g class="neon-title__text">
+          <text style="filter: url(#glow);" x="30" y="110">BLACK</text>
+          <text x="30" y="110">BLACK</text>
+        </g>
+        <g class="neon-title__text">
+          <text style="filter: url(#glow);" x="30" y="200">NOVEMBER</text>
+          <text x="30" y="200">NOVEMBER</text>
+        </g>
+        <g class="neon-title__text">
+          <text style="filter: url(#glow);" x="30" y="290">NYX</text>
+          <text x="30" y="290">NYX</text>
+        </g>
         <foreignobject x="280" y="215" width="53%" height="80px">
           <div class="neon-title__pattern circles-pattern"></div>
         </foreignobject>
