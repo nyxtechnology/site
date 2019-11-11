@@ -3,7 +3,6 @@
     width: 100%;
     margin-top: 20px;
     margin-top: 60px;
-    margin-bottom: 30px;
     text-align: right;
 }
 .main { position: relative; }
@@ -106,9 +105,9 @@
 @media screen and (max-width: 600px) {
     .dnone { display: none; }
     .header {
-        justify-content: center;
         margin-top: 40px;
         margin-bottom: 0;
+        text-align: center;
     }
     [class^="home-shape"] {
         transform: scale(.6,.6);
