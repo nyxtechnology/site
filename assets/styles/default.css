@@ -145,3 +145,8 @@ a {
 @media screen and (min-width: 1900px) {
     .neon-title { max-width: 40%; }
 }
+
+li {
+    margin-left: 20px;
+    padding: 5px 0;
+}
