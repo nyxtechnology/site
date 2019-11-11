@@ -169,3 +169,7 @@ svg.shape-wavy {
   cursor: pointer;
   opacity: 0;
 }
+
+.destaque {
+  color: var(--yellow);
+}
