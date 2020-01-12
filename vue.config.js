@@ -3,7 +3,6 @@ const utilsEnv = require(path.resolve(__dirname, 'src/utils/environments'))
 
 module.exports = {
   lintOnSave: !utilsEnv.isProd(),
-  publicPath: !utilsEnv.isDevelopment() ? '/dist/' : '/',
 
   devServer: {
     host: process.env.NODE_HOST || '0.0.0.0',

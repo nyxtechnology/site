@@ -1,5 +1,5 @@
 {
-  "name": "nyx-vue-cli-3-graphql",
+  "name": "nyx-site",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -25,6 +25,7 @@
     "graphql": "^14.2.1",
     "graphql-tag": "^2.10.1",
     "register-service-worker": "^1.6.2",
+    "rendertron-middleware": "^0.1.5",
     "serve-static": "^1.13.2",
     "vue": "^2.6.6",
     "vue-apollo": "^3.0.0-beta.28",
