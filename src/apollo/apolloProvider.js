@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import VueApollo from 'vue-apollo'
-import defaultOptions from './defaultOptions'
+
+import { InMemoryCache } from 'apollo-cache-inmemory'
 import { ApolloClient } from 'apollo-client'
 import { createHttpLink } from 'apollo-link-http'
-import { InMemoryCache } from 'apollo-cache-inmemory'
+
+import defaultOptions from './defaultOptions'
 
 Vue.use(VueApollo)
 

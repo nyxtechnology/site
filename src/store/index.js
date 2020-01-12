@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { isProd } from '@utils/environments'
+
+import { isProd } from '@/utils/environments'
+
 import app from './modules/app'
 
 Vue.use(Vuex)

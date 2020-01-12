@@ -1,10 +1,11 @@
 import Vue from 'vue'
-import App from './App.vue'
+
+import apolloProvider from '@/apollo/apolloProvider'
 import router from '@/router'
 import store from '@/store'
-import apolloProvider from '@/apollo/apolloProvider'
+
+import App from './App.vue'
 import './registerServiceWorker'
-import '@components/_globals'
 import i18n from './i18n'
 
 Vue.config.productionTip = false

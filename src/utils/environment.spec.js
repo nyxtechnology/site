@@ -1,6 +1,6 @@
 const utilsEnv = require('./environments')
 
-describe('@utils/environments/{isProd}', () => {
+describe('@/utils/environments/{isProd}', () => {
   it('Should return true if for production', () => {
     process.env.NODE_ENV = 'production'
     expect(utilsEnv.isProd()).toEqual(true)
@@ -11,7 +11,7 @@ describe('@utils/environments/{isProd}', () => {
   })
 })
 
-describe('@utils/environments/{isDevelopment}', () => {
+describe('@/utils/environments/{isDevelopment}', () => {
   it('Should return true if for development', () => {
     process.env.NODE_ENV = 'development'
     expect(utilsEnv.isDevelopment()).toEqual(true)
