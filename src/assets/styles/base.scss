@@ -1,13 +1,14 @@
-@import './_variables';
-@import './_helpers';
-@import './_colors';
-@import './_fonts';
-@import './_a11y';
+@import 'settings/index';
 
 * {
   box-sizing: border-box !important;
   margin: 0;
   padding: 0;
+}
+
+body {
+	@apply bg-gray-100 text-gray-900 tracking-wide antialiased;
+	font-family: $font-stack;
 }
 
 [v-cloak] {
