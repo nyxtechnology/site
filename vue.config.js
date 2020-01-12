@@ -29,26 +29,13 @@ module.exports = {
     sourceMap: true,
     loaderOptions: {
       sass: {
-        data: `@import "@styles/_colors.scss";
-               @import "@styles/_variables.scss";`
+        data: `@import "@/assets/styles/settings/_colors.scss";`
       }
     }
   },
 
   configureWebpack: {
-    devtool: 'source-map',
-    resolve: {
-      alias: {
-        '@pages': path.resolve(__dirname, 'src/pages'),
-        '@store': path.resolve(__dirname, 'src/store'),
-        '@utils': path.resolve(__dirname, 'src/utils'),
-        '@router': path.resolve(__dirname, 'src/router'),
-        '@assets': path.resolve(__dirname, 'src/assets'),
-        '@styles': path.resolve(__dirname, 'src/styles'),
-        '@layouts': path.resolve(__dirname, 'src/layouts'),
-        '@components': path.resolve(__dirname, 'src/components')
-      }
-    }
+    devtool: 'source-map'
   },
 
   pluginOptions: {
