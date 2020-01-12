@@ -21,11 +21,7 @@ module.exports = {
     '/node_modules/(?!(babel-jest|jest-vue-preprocessor)/)'
   ],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
-    '^@layouts/(.*)$': '<rootDir>/src/layouts/$1',
-    '^@store/(.*)$': '<rootDir>/src/store/$1',
-    '^@components/(.*)$': '<rootDir>/src/components/$1',
-    '^@utils/(.*)$': '<rootDir>/src/utils/$1'
+    '^@/(.*)$': '<rootDir>/src/$1'
   },
   snapshotSerializers: [
     'jest-serializer-vue'
@@ -39,8 +35,7 @@ module.exports = {
     'vue-jest': {
       'resources': {
         'scss': [
-          './src/styles/_colors.scss',
-          './src/styles/_variables.scss'
+          './src/assets/styles/settings/_colors.scss'
         ]
       }
     }
