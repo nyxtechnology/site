@@ -1,7 +1,15 @@
-module.exports = {
-  plugins: [
-    require('postcss-import'),
-    require('tailwindcss')('tailwind.js'),
+const autoprefixer = require('autoprefixer')
+const postcssImport = require('postcss-import')
+const tailwindcss = require('tailwindcss')
+
+const plugins = [
+  postcssImport,
+  tailwindcss('tailwind.config.js'),
+  autoprefixer()
+]
+
+if (process.env.NODE_ENV !== 'development') {
+  plugins.push(
     require('@fullhuman/postcss-purgecss')({
       content: ['./src/**/*.vue'],
       extractors: [
@@ -14,7 +22,10 @@ module.exports = {
           extensions: ['vue']
         }
       ]
-    }),
-    require('autoprefixer')()
-  ]
+    })
+  )
+}
+
+module.exports = {
+  plugins
 }
