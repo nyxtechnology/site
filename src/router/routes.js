@@ -1,9 +1,9 @@
+import enUS from './en-US'
+import ptBR from './pt-BR'
+
 export default [
-  {
-    path: '/',
-    name: 'home',
-    component: () => import(/* webpackChunkName: "page-home" */ '@/pages/Home')
-  },
+  ...ptBR,
+  ...enUS,
   {
     path: '*',
     name: '404',
