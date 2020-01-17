@@ -46,12 +46,12 @@ export default {
         },
         label: 'Planos'
       },
-      {
-        to: {
-          name: makeRouteName('work-us')
-        },
-        label: 'Trabalhe conosco'
-      },
+      // {
+      //   to: {
+      //     name: makeRouteName('work-us')
+      //   },
+      //   label: 'Trabalhe conosco'
+      // },
       {
         to: {
           name: makeRouteName('contact')
