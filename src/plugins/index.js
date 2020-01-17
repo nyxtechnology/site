@@ -1,1 +1,2 @@
 import './webFontLoad'
+import './vueCompositionApi'
