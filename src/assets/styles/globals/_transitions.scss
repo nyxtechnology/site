@@ -1,0 +1,3 @@
+.overlay-left,  .overlay-right,  .overlay-top,  .overlay-bottom {
+  @apply z-50 bg-primary #{!important};
+}

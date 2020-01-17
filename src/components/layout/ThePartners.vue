@@ -3,10 +3,10 @@
     <span class="partners__circle primary-circle"></span>
     <div class="container nyx-container">
       <h2 class="font-bold text-center lg:text-left">Alguns de nossos clientes.</h2>
-      <ul class="flex flex-wrap items-center content-center mt-24">
-        <li v-for="partner in partners" :key="partner" class="w-1/2 text-center sm:w-1/3 lg:w-1/4">
+      <ul class="partners-list flex flex-wrap items-center content-center mt-24">
+        <li v-for="partner in partners" :key="partner" class="partners-list__item w-1/2 text-center sm:w-1/3 lg:w-1/4">
           <a href="#" class="block p-6 lg:p-10">
-            <img class="partners__image inline" :src="`/images/partners/${partner}.png`" :alt="`Logo ${partner}`">
+            <img class="partners-list__image inline" :src="`/images/partners/${partner}.png`" :alt="`Logo ${partner}`">
           </a>
         </li>
       </ul>
@@ -29,7 +29,8 @@ export default {
       'peer2beer',
       'senai',
       'dfs',
-      'stefanini'
+      'stefanini',
+      'taller'
     ]
 
     return {
@@ -49,9 +50,19 @@ export default {
     left: 50px;
   }
 
-  &__image {
-    filter: grayscale(100%);
-    width: 130px;
+  &-list {
+    li {
+      &:hover {
+        @apply bg-gray-200;
+        .partners-list__image {
+          filter: none;
+        }
+      }
+    }
+    &__image {
+      filter: grayscale(100%);
+      width: 130px;
+    }
   }
 }
 </style>
