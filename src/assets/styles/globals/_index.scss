@@ -1,0 +1,40 @@
+/**
+ *  Globals Index
+ */
+
+@import "transitions";
+@import "a11y";
+
+.container {
+	transition: max-width .5s;
+}
+
+.layout__left-side {
+	width: 80px;
+}
+
+.nyx-container {
+	@apply relative mx-auto px-6;
+
+	@screen lg {
+		@apply px-16
+	}
+
+	@screen xl {
+		@apply px-32;
+		max-width: none !important;
+	}
+}
+
+.primary-circle {
+	@apply bg-primary rounded-full;
+}
+
+.layout {
+  &__content {
+    @apply w-full;
+    @screen sm {
+      width: calc(100% - 80px);
+    }
+  }
+}
