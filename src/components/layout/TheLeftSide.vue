@@ -1,7 +1,7 @@
 <template>
   <div class="left-side">
     <div
-      class="flex h-screen flex-col left-side__box justify-between items-center pt-10 pb-20 sticky top-0 z-50"
+      class="flex h-screen flex-col left-side__box justify-between items-center pt-10 pb-12 fixed top-0 z-40"
       :class="{ 'left-side__box--active': menuActive }"
     >
       <div>
@@ -21,12 +21,12 @@
           <!-- Add vue-dark-mode -->
         </li>
         <li class="mb-2">
-          <a href="#" class="py-2 px-4 block">
+          <a href="https://www.facebook.com/NyxTechnology/" target="_blank" class="py-2 px-4 block">
             <svg-icon name="facebook" width="20px" />
           </a>
         </li>
         <li>
-          <a href="#" class="py-2 px-4 block">
+          <a href="https://www.linkedin.com/company/nyx-technology/" target="_blank" class="py-2 px-4 block">
             <svg-icon name="linkedin" width="20px" />
           </a>
         </li>
@@ -72,10 +72,10 @@ export default {
         routeName: 'plans',
         label: 'Suporte (planos)'
       },
-      {
-        routeName: 'work-us',
-        label: 'Trabalhe conosco'
-      },
+      // {
+      //   routeName: 'work-us',
+      //   label: 'Trabalhe conosco'
+      // },
       {
         routeName: 'contact',
         label: 'Fale conosco'
@@ -109,6 +109,7 @@ export default {
 <style lang="scss">
 .left-side {
   &__box {
+    width: 80px;
     transition: all .5s 1.4s;
 
     &--active {
@@ -161,11 +162,11 @@ export default {
   }
 
   &--active {
-    @apply z-40 w-full visible;
+    @apply z-30 w-full visible;
     transition: width .8s .6s ease-out, visibility .1s ease-out;
 
     + .left-side-menu__slide {
-      @apply z-30 w-full visible;
+      @apply z-20 w-full visible;
       transition: width .6s ease-out, visibility .1s ease-out;
     }
   }
