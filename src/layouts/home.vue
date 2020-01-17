@@ -3,7 +3,9 @@
     <the-left-side class="layout__left-side hidden sm:block" />
     <div class="layout__content">
       <the-hero />
-      <router-view :key="$route.fullPath" />
+      <vue-page-transition name="overlay-left-full">
+        <router-view :key="$route.fullPath" />
+      </vue-page-transition>
       <the-footer />
     </div>
   </div>

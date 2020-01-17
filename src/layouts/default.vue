@@ -5,7 +5,9 @@
       <div class="container nyx-container">
         <the-header />
         <main>
-          <router-view :key="$route.fullPath" />
+          <vue-page-transition name="overlay-right-full">
+            <router-view :key="$route.fullPath" />
+          </vue-page-transition>
         </main>
       </div>
     </div>
