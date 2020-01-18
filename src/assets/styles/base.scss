@@ -12,3 +12,7 @@ body {
 		@apply p-0 pt-6 pr-6;
 	}
 }
+
+h1, h2, h3 {
+	@apply leading-none;
+}
