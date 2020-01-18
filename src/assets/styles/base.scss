@@ -1,12 +1,6 @@
 @import 'settings/index';
 @import 'globals/index';
 
-* {
-  box-sizing: border-box !important;
-  margin: 0;
-  padding: 0;
-}
-
 html {
 	scroll-behavior: smooth;
 }
@@ -17,27 +11,4 @@ body {
 	@screen sm {
 		@apply p-0 pt-6 pr-6;
 	}
-}
-
-[v-cloak] {
-  display: none;
-}
-
-button {
-	cursor: pointer;
-	appearance: none;
-	border: none;
-	background-color: transparent;
-}
-
-a {
-	text-decoration: none;
-}
-
-ul {
-	list-style-type: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	@apply leading-none;
 }

@@ -11,6 +11,7 @@ const plugins = [
 if (process.env.NODE_ENV !== 'development') {
   plugins.push(
     require('@fullhuman/postcss-purgecss')({
+      whitelist: ['html', 'body', 'h1', 'h2', 'h3'],
       content: ['./src/**/*.vue'],
       extractors: [
         {
