@@ -49,11 +49,14 @@
                   </li>
                 </ul>
               </div>
-              <div class="w-full p-8 uppercase">
-                <button
-                  class="mt-3 text-lg font-bold bg-primary w-full text-gray-100 rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700">
+              <div class="w-full p-8">
+                <router-link
+                  class="mt-3 text-lg text-center font-bold bg-primary w-full text-gray-100 rounded-lg px-6 py-3 block shadow-xl hover:bg-gray-700"
+                  :to="{ name: `contact__${$i18n.locale}`, query: { plan: plan.title } }"
+                >
                   Escolher
-                </button>
+                  <span class="sr-only">plano {{ plan.title }}</span>
+                </router-link>
               </div>
             </div>
           </div>
