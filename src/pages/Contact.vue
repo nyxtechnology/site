@@ -1,6 +1,6 @@
 <template>
   <section class="contact flex flex-wrap lg:flex-no-wrap mt-20 pb-24">
-    <div class="w-full w-1/2 bg-gray-100 p-12">
+    <div class="w-full w-1/2 bg-gray-100 p-6 lg:p-12">
       <h1 class="font-bold mb-2 text-4xl">Vamos quebrar o gelo.</h1>
       <p class="text-gray-600">
         Nosso desafio é desenvolver o seu negócio com as melhores tecnologias, independente de ser uma startup, uma empresa de médio porte ou uma grande corporação, nos informe seus dados que entraremos em contato com você.
@@ -21,7 +21,7 @@
           <app-button type="submit" bgColor="primary" class="mt-10">ENVIAR CONTATO</app-button>
       </form>
     </div>
-    <div class="w-full w-1/2 p-12 lg:pl-20 mt-24 lg:mt-0 flex flex-wrap justify-start content-center">
+    <div class="w-full w-1/2 p-2 lg:pl-20 mt-24 lg:mt-0 flex flex-wrap justify-start content-center">
       <h1 class="font-bold text-2xl">Mais informações</h1>
       <p class="text-gray-600 mt-2 mb-6">
         Se tiver mais alguma dúvida, deixe-nos saber, estamos sempre aqui.
@@ -51,7 +51,7 @@
           <span class="rounded-full bg-accent p-3">
             <svg-icon name="phone" height="25px" class="text-white fill-current" />
           </span>
-          <div class="flex ml-4 text-sm text-gray-600">
+          <div class="flex flex-wrap md:flex-no-wrap ml-4 text-sm text-gray-600">
             <a href="tel:+553398854-5445" class="p-3 mr-2 hover:bg-indigo-100">+55 (33) 98854-5445</a>
             <a href="tel:+551198956-6111" class="p-3 hover:bg-indigo-100">+55 (11) 98956-6111</a>
           </div>
@@ -60,7 +60,7 @@
           <span class="rounded-full bg-accent p-3">
             <svg-icon name="send" height="25px" class="text-white fill-current" />
           </span>
-          <div class="flex ml-4 text-sm text-gray-600">
+          <div class="flex flex-wrap md:flex-no-wrap ml-4 text-sm text-gray-600">
             <a href="mailto:contact@nyx.tc" class="p-3 mr-2 hover:bg-indigo-100">contact@nyx.tc</a> <br />
             <a href="mailto:email@nyx.tc" class="p-3 hover:bg-indigo-100">email@nyx.tc</a>
           </div>
