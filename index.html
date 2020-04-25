@@ -1,139 +1,209 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Black November - Nyx Technology</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="assets/styles/app.css">
-  <link rel="stylesheet" href="assets/styles/default.css">
-  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYX technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/a11y-css-reset/combo.css" />
+    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/form.css">
 </head>
-
 <body>
-  <header class="header">
-    <svg
-      class="home-shape-1 shape-wavy"
-      xmlns="http://www.w3.org/2000/svg" 
-      width="77.716" 
-      height="98.621"
-      viewBox="0 0 77.716 98.621">
-        <path d="M1123.287,540c0,16.429-31.547,18.361,0,38.139s0,27.322,0,43.534" transform="matrix(0.875, -0.485, 0.485, 0.875, -1225.186, 85.88)" />
-    </svg>
-    <div class="home-shape-2 shape-circle shape-circle--blue"></div>
-    <a href="/" title="Home" class="logo">
-      <img src="./assets/images/logo_nyx_technology.png"
-        alt="logo branca com as letras N Y X e o complemento com o texto technology">
-    </a>
-  </header>
-  <main class="main">
-    <h1 class="neon-title">
-      <svg viewBox="0 0 640 330">
-        <filter id="glow">
-          <feGaussianBlur stdDeviation="10 10" result="glow"/>
-            <feMerge>
-              <feMergeNode in="glow"/>
-              <feMergeNode in="glow"/>
-              <feMergeNode in="glow"/>
-            </feMerge>
-        </filter>
-        <g class="neon-title__text">
-          <text style="filter: url(#glow);" x="30" y="110">BLACK</text>
-          <text x="30" y="110">BLACK</text>
-        </g>
-        <g class="neon-title__text">
-          <text style="filter: url(#glow);" x="30" y="200">NOVEMBER</text>
-          <text x="30" y="200">NOVEMBER</text>
-        </g>
-        <g class="neon-title__text">
-          <text style="filter: url(#glow);" x="30" y="290">NYX</text>
-          <text x="30" y="290">NYX</text>
-        </g>
-        <foreignobject x="280" y="215" width="53%" height="80px">
-          <div class="neon-title__pattern circles-pattern"></div>
-        </foreignobject>
-      </svg>
-    </h1>
-    <h2 class="subtitle">
-      Até 50% de desconto nas horas <br class="dnone"> da equipe de sêniors.
-    </h2>
-    <a href="contato.html" title="Eu quero o desconto">
-      <button class="nyx-button">EU QUERO</button>
-    </a>
-    <div>
-      <br>
-      <a href="regras.html">Conheça as regras aqui.</a>
-    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header-logo text-center">
+                <a href="https://nyx.tc">
+                    <img src="assets/images/logo_nyx_technology.png" alt="logo branca com as letras N Y X e o complemento com o texto technology">
+                </a>
+            </div>
 
-    <div class="home-shape-3 shape-square">
-      <span class="shape-square-1"></span>
-      <span class="shape-square-2"></span>
-      <span class="shape-square-3"></span>
-    </div>
-    <div class="home-shape-4 shape-circle shape-circle--yellow"></div>
-    <svg
-      class="home-shape-5 shape-wavy"
-      xmlns="http://www.w3.org/2000/svg" 
-      width="77.716" 
-      height="98.621"
-      viewBox="0 0 77.716 98.621">
-        <path d="M1123.287,540c0,16.429-31.547,18.361,0,38.139s0,27.322,0,43.534" transform="matrix(0.875, -0.485, 0.485, 0.875, -1225.186, 85.88)" />
-    </svg>
-    <svg
-      class="home-shape-6 shape-triangle shape-triangle--red"
-      xmlns="http://www.w3.org/2000/svg"
-      width="91.31"
-      height="74.533"
-      viewBox="0 0 91.31 74.533">
-      <g transform="translate(-959.254 -643.472)">
-        <path
-          d="M589,501.25l24.7,31.888,46.869-73.233Z"
-          transform="translate(371 184)"/>
-        <path
-          d="M589,501.25l24.7,31.888,46.869-73.233Z"
-          transform="translate(390 184)"/>
-      </g>
-    </svg>
-  </main>
-  <footer class="footer">
-    <div class="footer-text">
-      Quem são ou já foram nossos clientes:
-    </div>
-    <ul class="footer-partners">
-      <li class="footer-partners__item">
-        <img src="assets/images/logo_fiesc.png" alt="Logo Fiesc">
-      </li>
-      <li class="footer-partners__item">
-        <img src="assets/images/logo_senai.png" alt="Logo Senai">
-      </li>
-      <li class="footer-partners__item">
-        <img src="assets/images/logo_sesi.png" alt="Logo Sesi">
-      </li>
-      <li class="footer-partners__item">
-        <img src="assets/images/logo_panasonic.png" alt="Logo Panasonic">
-      </li>
-      <li class="footer-partners__item">
-        <img src="assets/images/logo_kickante.png" alt="Logo Kickante">
-      </li>
-      <li class="footer-partners__item">
-        <img src="assets/images/logo_dfs.png" alt="Logo DFS">
-      </li>
-      <li class="footer-partners__item">
-        <img src="assets/images/logo_quero_educacao.png" alt="Logo Quero educação">
-      </li>
-      <li class="footer-partners__item">
-        <img src="assets/images/logo_peer2beer.png" alt="Logo Peer two beer">
-      </li>
-      <li class="footer-partners__item">
-        <img src="assets/images/logo_stefanini.png" alt="Logo Stefanini">
-      </li>
-      <li class="footer-partners__item">
-        <img src="assets/images/logo_taller.png" alt="Logo Taller">
-      </li>
-    </ul>
-  </footer>  
+            <div class="header-cta text-center">
+                <h1 class="header-cta__title">
+                    Vamos criar algo extraordinário juntos
+                </h1>
+                <a class="header-cta__link" href="#contact-form" title="Eu quero entrar em contato com a nyx">
+                    EU QUERO
+                </a>
+            </div>            
+        </div>
+        <div class="header-waves">
+            <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="100%"
+                height="100%"
+                viewBox="0 0 1743.746 172.529"
+                class="header-waves__svg">
+                <path 
+                    d="M0,659.959c9.082-2.018,51.162,80.185,159.44,84.765S294.661,631.7,431.9,669.041s135.221,182.649,253.287,64.583c50.532-50.532,128.157-65.592,160.449-64.583,105.957,6.055,99.9,63.716,228.059,75.683,110.831,10.349,97.884-63.07,224.023-68.62s204.741,69.156,280.533,46.419,159.44-72.656,159.44-72.656V606.476H-6.055v53.483Z"
+                    transform="translate(6.055 -606.476)"
+                    fill="currentColor" />
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="container clients">
+            <h2 class="section-title clients-title text-center">Alguns de nossos clientes.</h2>
+            <ul class="clients-list">
+                <li class="clients-list__item">
+                    <a href="http://fiesc.com.br/" class="clients-list__link" target="_blank" rel="noopener">
+                        <img 
+                            class="clients-list__image" 
+                            src="assets/images/clients/fiesc.png" 
+                            alt="Logo Fiesc">
+                    </a>
+                </li>
+                <li class="clients-list__item">
+                    <a href="https://www.panasonic.com/br/" class="clients-list__link" target="_blank" rel="noopener">
+                        <img 
+                            class="clients-list__image" 
+                            src="assets/images/clients/panasonic.png" 
+                            alt="Logo panasonic">
+                    </a>
+                </li>
+                <li class="clients-list__item">
+                    <a href="https://www.socioambiental.org/pt-br" class="clients-list__link" target="_blank" rel="noopener">
+                        <img 
+                            class="clients-list__image clients-list__image--invert clients-list__image--no-hover" 
+                            src="assets/images/clients/isa.png" 
+                            alt="Logo isa">
+                    </a>
+                </li>
+                <li class="clients-list__item">
+                    <a href="https://www.kickante.com.br/" class="clients-list__link" target="_blank" rel="noopener">
+                        <img 
+                            class="clients-list__image" 
+                            src="assets/images/clients/kickante.png" 
+                            alt="Logo kickante">
+                    </a>
+                </li>
+                <li class="clients-list__item">
+                    <a href="#" class="clients-list__link">
+                        <img 
+                            class="clients-list__image" 
+                            src="assets/images/clients/sesi.png" 
+                            alt="Logo sesi">
+                    </a>
+                </li>
+                <li class="clients-list__item">
+                    <a href="https://worldpece.org/" class="clients-list__link" target="_blank" rel="noopener">
+                        <img 
+                            class="clients-list__image clients-list__image--invert clients-list__image--no-hover" 
+                            src="assets/images/clients/pece.png" 
+                            alt="Logo pece">
+                    </a>
+                </li>
+                <li class="clients-list__item">
+                    <a href="https://sobre.quero.com/" class="clients-list__link" target="_blank" rel="noopener">
+                        <img 
+                            class="clients-list__image" 
+                            src="assets/images/clients/quero_educacao.png" 
+                            alt="Logo quero_educacao">
+                    </a>
+                </li>
+                <li class="clients-list__item">
+                    <a href="https://p2.beer/" class="clients-list__link" target="_blank" rel="noopener">
+                        <img 
+                            class="clients-list__image clients-list__image--invert clients-list__image--no-hover" 
+                            src="assets/images/clients/peer2beer.png" 
+                            alt="Logo peer2beer">
+                    </a>
+                </li>
+                <li class="clients-list__item">
+                    <a href="#" class="clients-list__link">
+                        <img 
+                            class="clients-list__image" 
+                            src="assets/images/clients/senai.png" 
+                            alt="Logo senai">
+                    </a>
+                </li>
+                <li class="clients-list__item">
+                    <a href="#" class="clients-list__link">
+                        <img 
+                            class="clients-list__image" 
+                            src="assets/images/clients/dfs.png" 
+                            alt="Logo dfs">
+                    </a>
+                </li>
+                <li class="clients-list__item">
+                    <a href="https://stefanini.com/pt-br" class="clients-list__link" target="_blank" rel="noopener">
+                        <img 
+                            class="clients-list__image clients-list__image--invert clients-list__image--no-hover" 
+                            src="assets/images/clients/stefanini.png" 
+                            alt="Logo stefanini">
+                    </a>
+                </li>
+                <li class="clients-list__item">
+                    <a href="https://blog.taller.net.br/home-site/" class="clients-list__link" target="_blank" rel="noopener">
+                        <img 
+                            class="clients-list__image" 
+                            src="assets/images/clients/taller.png" 
+                            alt="Logo taller">
+                    </a>
+                </li>
+                <li class="clients-list__item">
+                    <a href="http://revax.com.br/" class="clients-list__link" target="_blank" rel="noopener">
+                        <img 
+                            class="clients-list__image clients-list__image--invert" 
+                            src="assets/images/clients/revax.png" 
+                            alt="Logo Revax">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact-form" class="section-form">
+            <div class="container">
+                <h2 class="section-title contact-title text-center">
+                    Conte um pouco sobre seu projeto <br /> e entramos em contato com você o mais rápido.
+                </h2>
+            <form 
+                name="contact-form" 
+                class="contact-form"
+                method="POST"
+                action="https://smartforms.dev/submit/5dc8ba32ed25000605199af8">
+                <input type="hidden" name="_language" value="pt-BR">
+                <label class="nyx-field" for="name">
+                    <span class="nyx-field__text">Seu nome</span>
+                    <input id="name" type="text" name="name" class="nyx-field__input" placeholder="Jonh Rich" required>
+                </label>
+                <label class="nyx-field" for="email">
+                    <span class="nyx-field__text">Email</span>
+                    <input id="email" type="email" name="email" class="nyx-field__input" placeholder="email@email.com" required>
+                </label>
+                <label class="nyx-field" for="phone">
+                    <div class="nyx-field__text" >Telefone</div>        
+                    <input id="phone" type="phone" name="phone" class="nyx-field__input" placeholder="+55 (11) 98335-3569" required>
+                </label>
+                <label class="nyx-field" for="project">
+                    <span class="nyx-field__text">Nome do seu projeto</span>
+                    <input id="project" type="text" name="project" class="nyx-field__input" required>
+                </label>
+                <label class="nyx-field" for="description">
+                    <span class="nyx-field__text">Explique um pouco sobre seu projeto</span>
+                    <span class="nyx-field__subtext nyx-field__subtext--blue">(Links, caso tenha arquivos grandes enviar o link)</span>
+                    <textarea id="description" name="description" class="nyx-field__textarea" rows="7" required></textarea>
+                </label>
+                <label class="nyx-field" for="schedule">
+                    <span class="nyx-field__text">Melhores dias e horarios para uma call</span>
+                    <textarea id="schedule" name="schedule" class="nyx-field__textarea" rows="7" required></textarea>
+                </label>
+                <button class="nyx-button" type="submit">
+                    <span class="nyx-button__text">ENVIAR</span>
+                    <svg class="nyx-button__right-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18">
+                    <g transform="translate(0 -38.25)">
+                        <g transform="translate(0 38.25)">
+                            <path d="M0,56.25l21-9-21-9v7l15,2-15,2Z" transform="translate(0 -38.25)" fill="currentColor" />
+                        </g>
+                    </g>
+                    </svg>
+                </button>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

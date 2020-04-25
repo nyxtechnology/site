@@ -1,0 +1,241 @@
+:root {
+  --background: #19191D;
+  --secondary: #16161A;
+  --highlight: #7f5af0;
+  --color-text: #D5D5D5;
+}
+
+html { font-size: 62.5%; }
+
+body {
+  font-family: 'Questrial', sans-serif;
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: var(--background);
+}
+
+a { text-decoration: none; }
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container  {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-title {
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: lighter;
+}
+
+.header {
+  background-color: var(--secondary);
+  padding-top: 50px;
+}
+
+.header-logo {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.header-cta {
+  margin-top: 10%;
+}
+
+.header-cta__title {
+  width: 50%;
+  margin: 0 auto;
+  font-weight: lighter;
+  font-size: 6.5rem;
+}
+
+.header-cta__link {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 16px 50px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-text);
+  background-color: var(--highlight);
+  border-bottom-left-radius: 36px;
+  border-top-right-radius: 36px;
+}
+
+.header-waves__svg {
+  color: var(--secondary);
+  background-color: var(--background);
+  margin-bottom: -2px;
+  width: 100vw;
+}
+
+.clients {
+  position: relative;
+  z-index: 0;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  margin-top: 3%;
+  margin-left: -44px;
+}
+
+.clients-list__item {
+  width: 25%;
+  text-align: center;
+}
+
+.clients-list__item:hover {
+  background-color: var(--secondary);
+}
+
+.clients-list__link {
+  display: block;
+  padding: 5rem;
+}
+
+.clients-list__image {
+  display: inline;
+  filter: grayscale(100%);
+  width: 130px;
+}
+
+.clients-list__image--invert {
+  filter: invert(1) grayscale(100%);
+}
+
+.clients-list__item:hover .clients-list__image:not(.clients-list__image--no-hover) {
+  filter: none;
+}
+
+.section-form {
+  background-color: var(--secondary);
+  margin-top: 3%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contact-title {
+  margin-bottom: 5%;
+}
+
+.contact-form > .nyx-field { margin-bottom: 60px; }
+.contact-form .nyx-field-file { width: 50%; }
+
+.nyx-button {
+    width: 100%;
+    color: var(--color-text);
+    background-color: var(--highlight);
+    font-weight: 800;
+    font-size: 1.8rem;
+    padding: 16px 38px;
+    border-style: solid;
+    border-color: #463287;
+    border-width: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom-left-radius: 36px;
+    border-top-right-radius: 36px;
+}
+
+.nyx-button--outline {
+    background-color: transparent;
+    color: var(--highlight);
+    border-width: 1px;
+}
+
+.nyx-button, .nyx-button--outline {
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+} 
+
+.nyx-button__left-icon { margin-right: 10px; }
+.nyx-button__right-icon { margin-left: 10px; }
+
+.nyx-field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nyx-field__text {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.nyx-field__text--half {
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .nyx-field__text--half { width: 100%; }
+}
+
+.nyx-field__subtext {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+.nyx-field__subtext--blue { color: var(--blue); }
+
+.nyx-field__input, .nyx-field__textarea, .nyx-field__select {
+    width: 100%;
+    background-color: transparent;
+    color: var(--color-text);
+    font-size: 1.6rem;
+    padding: 20px 20px;
+    border-bottom: 1px solid #999;
+}
+
+.nyx-field-file {
+    position: relative;
+}
+
+.nyx-field-file__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.filter-invert {
+  filter: invert(1) grayscale(100%);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .header-cta__title {
+    width: 80%;
+    font-size: 3rem;
+  }
+  .clients-list__item {
+    width: 100%;
+  }
+  .contact-form {
+    width: 80%;
+  }
+  .nyx-field__text--half { width: 100%; }
+}
