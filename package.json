@@ -46,7 +46,7 @@
     "@vue/cli-plugin-e2e-cypress": "^5.0.8",
     "@vue/cli-plugin-eslint": "^3.5.0",
     "@vue/cli-plugin-pwa": "^3.5.0",
-    "@vue/cli-plugin-unit-jest": "^3.5.0",
+    "@vue/cli-plugin-unit-jest": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
     "@vue/eslint-config-standard": "^4.0.0",
     "@vue/test-utils": "1.0.0-beta.29",
@@ -63,7 +63,7 @@
     "svgo-loader": "^2.1.0",
     "tailwindcss": "^1.1.4",
     "vue-cli-plugin-i18n": "^0.6.0",
-    "vue-cli-plugin-svg-sprite": "^1.0.0",
+    "vue-cli-plugin-svg-sprite": "^1.1.0",
     "vue-template-compiler": "^2.5.21"
   }
 }
