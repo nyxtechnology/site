@@ -30,7 +30,7 @@
     "postcss-import": "^12.0.1",
     "register-service-worker": "^1.6.2",
     "rendertron-middleware": "^0.1.5",
-    "serve-static": "^1.13.2",
+    "serve-static": "^1.16.2",
     "vue": "^3.0.0",
     "vue-apollo": "^3.0.0-beta.28",
     "vue-extend-layout": "^2.0.6",
