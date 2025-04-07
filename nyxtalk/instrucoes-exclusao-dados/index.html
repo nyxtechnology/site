@@ -1,166 +1,376 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="../../favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instruções para Exclusão de Dados - NyxTalk</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Instruções para Exclusão de Dados - NyxTalk">
+    <meta name="description" content="Instruções para solicitar a exclusão de seus dados pessoais do NyxTalk - Chatbot desenvolvido pela Nyx Technology">
+
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/a11y-css-reset/combo.css" />
+    <link rel="stylesheet" href="../../assets/app.css">
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: #333;
+      .content-section {
+        padding: 50px 20px;
+      }
+      
+      .content-container {
         max-width: 800px;
         margin: 0 auto;
-        padding: 20px;
       }
-      h1, h2, h3, h4 {
-        color: #2c3e50;
-      }
-      .container {
-        background-color: #fff;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      }
-      .header {
+      
+      .page-title {
         text-align: center;
+        font-size: 4rem;
+        font-weight: lighter;
         margin-bottom: 30px;
       }
+      
       .last-updated {
-        color: #666;
+        color: #999;
         font-style: italic;
-        margin-bottom: 20px;
+        text-align: center;
+        margin-bottom: 40px;
       }
-      .contact {
-        margin-top: 30px;
-        padding-top: 20px;
-        border-top: 1px solid #eee;
+      
+      h2 {
+        font-size: 2.4rem;
+        color: var(--highlight);
+        margin-top: 40px;
+        margin-bottom: 15px;
       }
+      
+      h3 {
+        font-size: 1.8rem;
+        color: var(--highlight);
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      
+      p, ul, ol {
+        font-size: 1.6rem;
+        line-height: 1.8;
+        margin-bottom: 15px;
+      }
+      
+      ul, ol {
+        padding-left: 30px;
+      }
+      
+      ul li, ol li {
+        margin-bottom: 8px;
+      }
+      
+      a {
+        color: var(--highlight);
+        text-decoration: underline;
+      }
+      
       hr {
         border: 0;
         height: 1px;
-        background-color: #eee;
+        background-color: #333;
+        margin: 40px 0;
+      }
+      
+      .contact {
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #333;
+      }
+      
+      .contact p {
+        margin-bottom: 5px;
+      }
+      
+      .contact strong {
+        font-weight: bold;
+        color: var(--highlight);
+      }
+
+      .alert-box {
+        background-color: rgba(255, 224, 102, 0.15);
+        border-left: 4px solid var(--highlight);
+        padding: 15px 20px;
+        margin: 20px 0;
+        border-radius: 0 4px 4px 0;
+      }
+
+      .alert-box p {
+        margin: 0;
+      }
+
+      .form-container {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 30px;
+        border-radius: 8px;
         margin: 30px 0;
       }
-      ul, ol {
-        padding-left: 20px;
+
+      .form-group {
+        margin-bottom: 20px;
       }
-      strong {
-        color: #2c3e50;
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1.6rem;
+        color: var(--highlight);
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.6rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        color: #fff;
+      }
+
+      .form-group textarea {
+        min-height: 100px;
+        resize: vertical;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--highlight);
+        color: #000;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 30px;
+        font-size: 1.6rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: bold;
+      }
+
+      .btn:hover {
+        background-color: #ffed80;
+        transform: translateY(-2px);
+      }
+
+      .steps-container {
+        margin: 30px 0;
+      }
+
+      .step {
+        margin-bottom: 30px;
+        display: flex;
+        gap: 15px;
+      }
+
+      .step-number {
+        background-color: var(--highlight);
+        color: #000;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.8rem;
+        flex-shrink: 0;
+      }
+
+      .step-content {
+        flex: 1;
+      }
+
+      .step-title {
+        font-size: 1.8rem;
+        color: var(--highlight);
+        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <h1>Instruções para Exclusão de Dados do Usuário - NyxTalk</h1>
+    <div class="content-section">
+      <div class="content-container">
+        <h1 class="page-title">Instruções para Exclusão de Dados</h1>
         <p class="last-updated"><strong>Última atualização: 6 de abril de 2025</strong></p>
+
+        <p>
+          Em conformidade com a <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">Lei Geral de Proteção de Dados Pessoais (LGPD) - Lei nº 13.709/2018</a>, você tem o direito de solicitar a exclusão dos seus dados pessoais de nossos sistemas. Esta página fornece instruções detalhadas sobre como exercer esse direito.
+        </p>
+
+        <div class="alert-box">
+          <p>
+            <strong>Importante:</strong> A exclusão de dados é permanente e não pode ser revertida. Após a conclusão do processo, suas informações serão removidas de nossos sistemas ativos, respeitando os períodos de retenção exigidos por lei.
+          </p>
+        </div>
+
+        <h2>Opções para Solicitar a Exclusão de Dados</h2>
+        
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3 class="step-title">Diretamente pelo ChatBot</h3>
+              <p>A maneira mais simples de solicitar a exclusão de seus dados é diretamente através do chatbot NyxTalk:</p>
+              <ol>
+                <li>Inicie uma conversa com o NyxTalk no WhatsApp</li>
+                <li>Digite a mensagem <strong>"EXCLUIR DADOS"</strong> (em maiúsculas)</li>
+                <li>Siga as instruções fornecidas pelo chatbot para confirmar sua identidade</li>
+                <li>Você receberá uma confirmação quando a solicitação for processada</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3 class="step-title">Por E-mail</h3>
+              <p>Você também pode solicitar a exclusão de seus dados enviando um e-mail:</p>
+              <ol>
+                <li>Envie um e-mail para <a href="mailto:admin@nyx.tc">admin@nyx.tc</a></li>
+                <li>Use o assunto "Solicitação de Exclusão de Dados"</li>
+                <li>No corpo do e-mail, inclua:
+                  <ul>
+                    <li>Seu nome completo</li>
+                    <li>Número de telefone associado à sua conta NyxTalk</li>
+                    <li>Uma declaração clara solicitando a exclusão de seus dados</li>
+                  </ul>
+                </li>
+                <li>Nossa equipe responderá em até 15 dias úteis para confirmar a exclusão ou solicitar informações adicionais para verificar sua identidade</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3 class="step-title">Formulário Online</h3>
+              <p>Utilize o formulário abaixo para solicitar a exclusão de seus dados:</p>
+              
+              <div class="form-container">
+                <form id="deleteDataForm" action="#" method="POST">
+                  <div class="form-group">
+                    <label for="fullName">Nome Completo:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="phoneNumber">Número de Telefone (com DDD):</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+55 (XX) XXXXX-XXXX" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email">E-mail para Contato:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="reason">Motivo da Solicitação (opcional):</label>
+                    <textarea id="reason" name="reason"></textarea>
+                  </div>
+                  
+                  <div class="form-group">
+                    <button type="submit" class="btn">Enviar Solicitação</button>
+                  </div>
+                </form>
+              </div>
+              
+              <script>
+                document.getElementById('deleteDataForm').addEventListener('submit', function(e) {
+                  e.preventDefault();
+                  alert('Formulário enviado com sucesso! Sua solicitação será processada em até 15 dias úteis.');
+                  this.reset();
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+
+        <h2>O que Acontece Após sua Solicitação</h2>
+        <ol>
+          <li>
+            <strong>Confirmação:</strong> Enviaremos uma confirmação do recebimento da sua solicitação em até 2 dias úteis.
+          </li>
+          <li>
+            <strong>Verificação de identidade:</strong> Poderemos solicitar informações adicionais para confirmar sua identidade.
+          </li>
+          <li>
+            <strong>Processamento:</strong> Sua solicitação será processada em até 15 dias úteis, conforme estabelecido pela <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a>.
+          </li>
+          <li>
+            <strong>Confirmação de exclusão:</strong> Após a conclusão do processo, você receberá uma confirmação de que seus dados foram excluídos.
+          </li>
+        </ol>
+
+        <h2>Dados que Serão Excluídos</h2>
+        <p>Quando você solicita a exclusão de seus dados, removemos todas as informações pessoais associadas à sua conta, incluindo:</p>
+        <ul>
+          <li>Informações de perfil (nome, número de telefone)</li>
+          <li>Histórico de conversas e mensagens</li>
+          <li>Preferências e configurações</li>
+          <li>Quaisquer dados fornecidos durante o uso do chatbot</li>
+        </ul>
+
+        <div class="alert-box">
+          <p>
+            <strong>Observação:</strong> Alguns dados podem ser retidos por períodos específicos para cumprir obrigações legais, resolver disputas ou fazer cumprir nossos acordos, conforme permitido pela <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a>.
+          </p>
+        </div>
+
+        <h2>Dúvidas Frequentes</h2>
+        
+        <h3>Quanto tempo leva para excluir meus dados?</h3>
+        <p>
+          Processamos solicitações de exclusão de dados em até 15 dias úteis, conforme estabelecido pela <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a>. Em alguns casos, pode levar mais tempo se precisarmos verificar sua identidade ou se sua solicitação for particularmente complexa.
+        </p>
+        
+        <h3>A exclusão de dados afetará minha conta do WhatsApp?</h3>
+        <p>
+          Não. A exclusão de seus dados do NyxTalk não afeta sua conta do WhatsApp ou quaisquer outros serviços da Meta. Apenas removemos suas informações de nossos sistemas.
+        </p>
+        
+        <h3>Posso recuperar meus dados após a exclusão?</h3>
+        <p>
+          Não. A exclusão de dados é permanente e não pode ser revertida. Após a conclusão do processo, suas informações serão removidas de nossos sistemas ativos.
+        </p>
+        
+        <h3>E se eu quiser usar o NyxTalk novamente depois da exclusão?</h3>
+        <p>
+          Você pode começar a usar o NyxTalk novamente a qualquer momento, mas será tratado como um novo usuário, e precisará fornecer suas informações novamente.
+        </p>
+
+        <h2>Contato</h2>
+        <p>
+          Se você tiver dúvidas adicionais sobre a exclusão de dados ou precisar de assistência, entre em contato conosco:
+        </p>
+        <p>
+          E-mail: <a href="mailto:admin@nyx.tc">admin@nyx.tc</a>
+        </p>
+
+        <hr>
+
+        <div class="contact">
+          <p><strong>NyxTalk</strong></p>
+          <p>Email: <a href="mailto:admin@nyx.tc">admin@nyx.tc</a></p>
+        </div>
       </div>
-
-      <h2>Solicitação de Exclusão de Dados</h2>
-      <p>
-        A NyxTalk respeita seu direito à privacidade e ao controle de seus dados pessoais, em conformidade com a <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">Lei Geral de Proteção de Dados Pessoais (LGPD) - Lei nº 13.709/2018</a>. Esta página fornece instruções sobre como solicitar a exclusão de seus dados pessoais de nossos sistemas.
-      </p>
-
-      <h2>Seus Direitos sob a LGPD</h2>
-      <p>De acordo com a <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a>, você, como titular dos dados, tem o direito de solicitar:</p>
-      <ul>
-        <li>A eliminação dos dados pessoais tratados com seu consentimento</li>
-        <li>A anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD</li>
-        <li>Informações sobre o tratamento de seus dados pessoais</li>
-      </ul>
-
-      <h2>Como Solicitar a Exclusão de Seus Dados</h2>
-      <p>Para exercer seu direito de eliminação de dados conforme estabelecido pela <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a>, siga as instruções abaixo:</p>
-
-      <h3>1. Opções para Solicitar a Exclusão de Dados</h3>
-      
-      <h4>Opção 1: Através do WhatsApp</h4>
-      <p>Envie a mensagem "SOLICITAR EXCLUSÃO DE DADOS" para o nosso número oficial de WhatsApp. Nosso chatbot irá guiá-lo pelo processo de verificação e confirmação da solicitação.</p>
-
-      <h4>Opção 2: Por Email</h4>
-      <p>Envie um email para <strong><a href="mailto:admin@nyx.tc">admin@nyx.tc</a></strong> com as seguintes informações:</p>
-      <ul>
-        <li><strong>Assunto do Email</strong>: "Solicitação de Exclusão de Dados - [Seu Nome]"</li>
-        <li><strong>Corpo do Email</strong>:
-          <ul>
-            <li>Seu nome completo</li>
-            <li>Número de telefone usado no WhatsApp</li>
-            <li>Email associado à sua conta NyxTalk (se aplicável)</li>
-            <li>Uma declaração clara solicitando a exclusão de seus dados pessoais</li>
-            <li>Data em que começou a utilizar o NyxTalk (aproximada, se não souber a data exata)</li>
-          </ul>
-        </li>
-      </ul>
-
-      <h3>2. Verificação de Identidade</h3>
-      <p>
-        Para proteger sua privacidade e segurança, e em conformidade com a <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a>, podemos solicitar documentos ou informações adicionais para verificar sua identidade antes de processar sua solicitação. Isto pode incluir:
-      </p>
-      <ul>
-        <li>Confirmação por mensagem enviada ao seu número de WhatsApp registrado</li>
-        <li>Código de verificação enviado por SMS ou email</li>
-        <li>Resposta a perguntas específicas sobre sua conta</li>
-        <li>Outros métodos de verificação conforme necessário</li>
-      </ul>
-
-      <h3>3. Confirmação e Processamento</h3>
-      <p>Após recebermos sua solicitação e confirmarmos sua identidade:</p>
-      <ul>
-        <li>Enviaremos uma confirmação do recebimento de sua solicitação</li>
-        <li>Processaremos sua solicitação dentro de 15 dias, conforme exigido pela <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a></li>
-        <li>Enviaremos uma confirmação quando a exclusão estiver concluída</li>
-      </ul>
-
-      <h2>O Que Será Excluído</h2>
-      <p>Mediante sua solicitação, excluiremos todos os dados pessoais associados à sua conta, incluindo:</p>
-      <ul>
-        <li>Seu número de telefone do WhatsApp em nossos sistemas</li>
-        <li>Histórico de conversas e mensagens</li>
-        <li>Informações de perfil e preferências</li>
-        <li>Dados de uso e interação</li>
-        <li>Quaisquer outros dados pessoais que tenhamos coletado</li>
-      </ul>
-
-      <h2>Efeitos da Exclusão de Dados</h2>
-      <p>Após a exclusão dos seus dados:</p>
-      <ul>
-        <li>Você não poderá mais utilizar o NyxTalk com o mesmo número de WhatsApp sem criar um novo registro</li>
-        <li>O histórico de conversas será permanentemente perdido</li>
-        <li>Quaisquer configurações ou preferências personalizadas serão removidas</li>
-        <li>Você poderá parar de receber mensagens do NyxTalk</li>
-      </ul>
-
-      <h2>Retenção Limitada</h2>
-      <p>
-        Conforme permitido pela <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a>, podemos reter certas informações, mesmo após sua solicitação de exclusão, nas seguintes circunstâncias:
-      </p>
-      <ul>
-        <li>Quando houver uma obrigação legal ou regulatória que exija a conservação dos dados</li>
-        <li>Para estudo por órgão de pesquisa, garantindo sempre que possível a anonimização dos dados</li>
-        <li>Transferência a terceiro, respeitados os requisitos de tratamento de dados da LGPD</li>
-        <li>Uso exclusivo do controlador, vedado seu acesso por terceiro, e desde que anonimizados os dados</li>
-      </ul>
-      <p>Qualquer informação retida será mantida de acordo com nossa <a href="../politica-de-privacidade/">Política de Privacidade</a> e a <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a>.</p>
-
-      <h2>Dados na Plataforma WhatsApp</h2>
-      <p>
-        É importante observar que a exclusão de seus dados do NyxTalk não afeta os dados mantidos pela Meta/WhatsApp em suas próprias plataformas. Para solicitar a exclusão de seus dados do WhatsApp, você precisará contatar o WhatsApp diretamente através dos canais fornecidos por eles.
-      </p>
-
-      <h2>Perguntas e Assistência</h2>
-      <p>
-        Se você tiver dúvidas sobre o processo de exclusão de dados, seus direitos sob a <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a>, ou precisar de assistência adicional, entre em contato com nosso Encarregado de Proteção de Dados (DPO) em <strong><a href="mailto:admin@nyx.tc">admin@nyx.tc</a></strong>.
-      </p>
-
-      <hr>
-
-      <div class="contact">
-        <p><strong>NyxTalk</strong></p>
-        <p>Email: <a href="mailto:admin@nyx.tc">admin@nyx.tc</a></p>
-      </div>
+    </div>
+    
+    <div class="header-waves">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="100%"
+        height="100%"
+        viewBox="0 0 1743.746 172.529"
+        class="header-waves__svg">
+        <path 
+          d="M0,659.959c9.082-2.018,51.162,80.185,159.44,84.765S294.661,631.7,431.9,669.041s135.221,182.649,253.287,64.583c50.532-50.532,128.157-65.592,160.449-64.583,105.957,6.055,99.9,63.716,228.059,75.683,110.831,10.349,97.884-63.07,224.023-68.62s204.741,69.156,280.533,46.419,159.44-72.656,159.44-72.656V606.476H-6.055v53.483Z"
+          transform="translate(6.055 -606.476)"
+          fill="currentColor" />
+      </svg>
     </div>
   </body>
 </html>
