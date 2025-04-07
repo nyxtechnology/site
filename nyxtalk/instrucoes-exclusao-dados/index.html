@@ -104,58 +104,6 @@
         margin: 0;
       }
 
-      .form-container {
-        background-color: rgba(255, 255, 255, 0.05);
-        padding: 30px;
-        border-radius: 8px;
-        margin: 30px 0;
-      }
-
-      .form-group {
-        margin-bottom: 20px;
-      }
-
-      .form-group label {
-        display: block;
-        margin-bottom: 8px;
-        font-size: 1.6rem;
-        color: var(--highlight);
-      }
-
-      .form-group input,
-      .form-group textarea {
-        width: 100%;
-        padding: 10px;
-        font-size: 1.6rem;
-        background-color: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 4px;
-        color: #fff;
-      }
-
-      .form-group textarea {
-        min-height: 100px;
-        resize: vertical;
-      }
-
-      .btn {
-        display: inline-block;
-        background-color: var(--highlight);
-        color: #000;
-        padding: 12px 25px;
-        border: none;
-        border-radius: 30px;
-        font-size: 1.6rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        font-weight: bold;
-      }
-
-      .btn:hover {
-        background-color: #ffed80;
-        transform: translateY(-2px);
-      }
-
       .steps-container {
         margin: 30px 0;
       }
@@ -188,6 +136,17 @@
         font-size: 1.8rem;
         color: var(--highlight);
         margin-bottom: 10px;
+      }
+
+      .highlighted-email {
+        font-size: 2rem;
+        text-align: center;
+        margin: 40px 0;
+      }
+
+      .highlighted-email a {
+        color: var(--highlight);
+        font-weight: bold;
       }
     </style>
   </head>
@@ -243,50 +202,10 @@
               </ol>
             </div>
           </div>
+        </div>
 
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3 class="step-title">Formulário Online</h3>
-              <p>Utilize o formulário abaixo para solicitar a exclusão de seus dados:</p>
-              
-              <div class="form-container">
-                <form id="deleteDataForm" action="#" method="POST">
-                  <div class="form-group">
-                    <label for="fullName">Nome Completo:</label>
-                    <input type="text" id="fullName" name="fullName" required>
-                  </div>
-                  
-                  <div class="form-group">
-                    <label for="phoneNumber">Número de Telefone (com DDD):</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+55 (XX) XXXXX-XXXX" required>
-                  </div>
-                  
-                  <div class="form-group">
-                    <label for="email">E-mail para Contato:</label>
-                    <input type="email" id="email" name="email" required>
-                  </div>
-                  
-                  <div class="form-group">
-                    <label for="reason">Motivo da Solicitação (opcional):</label>
-                    <textarea id="reason" name="reason"></textarea>
-                  </div>
-                  
-                  <div class="form-group">
-                    <button type="submit" class="btn">Enviar Solicitação</button>
-                  </div>
-                </form>
-              </div>
-              
-              <script>
-                document.getElementById('deleteDataForm').addEventListener('submit', function(e) {
-                  e.preventDefault();
-                  alert('Formulário enviado com sucesso! Sua solicitação será processada em até 15 dias úteis.');
-                  this.reset();
-                });
-              </script>
-            </div>
-          </div>
+        <div class="highlighted-email">
+          <p>Para qualquer solicitação de exclusão de dados, entre em contato através do email: <a href="mailto:admin@nyx.tc">admin@nyx.tc</a></p>
         </div>
 
         <h2>O que Acontece Após sua Solicitação</h2>
